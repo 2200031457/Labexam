@@ -1,22 +1,16 @@
-package com.klef.jfsd.exam;
+package com.klef.jfsd.exam.entity;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "department")
 public class Department {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "department_id")
     private int departmentId;
 
-    @Column(name = "name")
     private String name;
-
-    @Column(name = "location")
     private String location;
-
-    @Column(name = "hod_name")
     private String hodName;
 
     // Getters and Setters
